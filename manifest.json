@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "shortsblock",
+    "version": "1",
+    "description": "blocking shorts",
+    "content_scripts": [
+        {
+            "matches": [ "*://*.youtube.com/*" ],
+            "js": [ "content.js" ],
+            "run_at": "document_idle"
+        }
+    ]
+}
