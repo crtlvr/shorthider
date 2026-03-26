@@ -9,7 +9,7 @@ observer.observe(document.body, {
 
 hideShorts()
 function hideShorts() {
-    document.querySelectorAll("ytd-rich-shelf-renderer, ytd-guide-entry-renderer:has(a[title='Shorts'])").forEach(el => {
+    document.querySelectorAll("yt-horizontal-list-renderer, ytd-feed-filter-chip-bar-renderer, ytd-rich-shelf-renderer, ytd-guide-entry-renderer:has(a[title='Shorts'])").forEach(el => {
         el.style.display = "none"
     })
 }
